@@ -1,0 +1,30 @@
+baseURL: "https://lumbung.gimpscape.org/"
+summaryLength: 45
+languageCode: "id"
+title: "Lumbung Gimpscape ID"
+paginate: 10
+theme: "lumbung"
+outputs:
+  home: ["HTML", "RSS", "JSON"]
+params:
+# description untuk membuat meta website
+  description: "Lumbung Gimpscape merupakan laman berbagi sumberdaya bebas pakai. Halaman ini diberdayakan oleh Komunitas Gimpscape Indonesia. Untuk dapat mengunduh template, silakan akses halaman ini menggunakan peramban desktop Anda."
+  # images digunakan untuk mendaftarkan opengraph dan tag twitter
+  # jika tidak diperlukan, Anda kosongi saja
+  images: ["screenshot.png"]
+  # daftar menu yang akan ditampilkan beserta tautannya
+  menu:
+    beranda:
+      title: "Beranda"
+      link: "/"
+# daftar sosial media yang didukung, jika tidak ingin diisi, silakan dikosongi
+  socmed:
+    twitter: "gimpscape"
+    telegram: "gimpscape"
+    instagram: "gimpscape_id"
+    github: "gimpscape"
+    email: "gimpscape_id@gmail.com"
+# id google analytics,
+# googleAnalytics: UA-123-45
+# id untuk disqus
+disqusShortName: 
