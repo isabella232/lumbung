@@ -42,6 +42,7 @@ function executeSearch(searchQuery){
 }
 
 function populateResults(result){
+  $('#resultkey').append(searchQuery);
 
   $.each(result,function(key,value){
     var contents= value.item.contents;
@@ -70,7 +71,6 @@ function populateResults(result){
     var templateDefinition = $('#search-result-template').html();
     //replace values
     var output = render(templateDefinition,{key:key,title:value.item.title,link:value.item.permalink,tags:value.item.tags,categories:value.item.categories,thumbnails:value.item.thumbnails[0],creator:value.item.creator,snippet:snippet});
-    $('#resultkey').append(searchQuery);
     $('#search-results').append(output);
     $('#search-results .konten-templates').removeClass("d-none");
     $.each(snippetHighlights,function(snipkey,snipvalue){
