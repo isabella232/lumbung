@@ -25,6 +25,6 @@ params:
     github: "gimpscape"
     email: "gimpscape_id@gmail.com"
 # id google analytics,
-# googleAnalytics: UA-123-45
+googleAnalytics: UA-168261771-3
 # id untuk disqus
 disqusShortName: gimpscape-id
