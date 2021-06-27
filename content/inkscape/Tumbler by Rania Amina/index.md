@@ -5,10 +5,9 @@ categories: "Inkscape"
 creator: 
   name: "Rania Amina"
   gitlink: "https://instagram.com/raniaamina.id"
-tags: []
-thumbnails: [assets/thumbnail.png]
+tags: ["tumbler","mockup","inkscape"]
+thumbnails: [assets/tumbler-by-raniaamina.zip]
 downloadfile: ""
 license: "CC-BY-SA"
 ---
-**Tulis deskripsi singkat tentang templat ini.**
-<!--silakan edit bagian nama, gitlink, thumbnail, link dowload, lisensi jika diperlukan, serta deskripsi-->
+Template tumbler simpel oleh Rania Amina
