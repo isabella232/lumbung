@@ -6,8 +6,8 @@ creator:
   name: "Rania Amina"
   gitlink: "https://instagram.com/raniaamina.id"
 tags: ["tumbler","mockup","inkscape"]
-thumbnails: [assets/tumbler-by-raniaamina.zip]
-downloadfile: ""
+thumbnails: [assets/thumbnail.png]
+downloadfile: "assets/tumbler-by-raniaamina.zip"
 license: "CC-BY-SA"
 ---
 Template tumbler simpel oleh Rania Amina
