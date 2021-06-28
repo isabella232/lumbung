@@ -6,6 +6,7 @@ creator:
   name: "Ealita & Aulia"
   gitlink: "#"
 tags: ["font","inkscape"]
+images: [templat/grey-elegan-by-ahmad-bayhaqi-saputra/assets/thumbnail.png]
 thumbnails: [assets/thumbnail.png]
 downloadfile: "assets/hijaiyah-by-ealita-aulia.zip"
 license: "CC-BY-NC-SA"
