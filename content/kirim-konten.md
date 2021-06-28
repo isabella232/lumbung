@@ -63,4 +63,4 @@ Setiap berkas yang dikirimkan ke Lumbung akan dilisensikan di bawah lisensi [CC 
 Apabila Anda mengalami kesulitan dalam pengiriman konten, silakan untuk melapor ke grup [Telegram Gimpscape](https://t.me/gimpscape).
 
 ## Lain-Lain
-Laman Lumbung ini masih akan disempurkan dari waktu ke waktu. Silakan berkabar kepada kami bila Anda memiliki ide atau saran untuk memperbaiki layanan ini melalui Issue Github.
+Laman Lumbung ini masih akan disempurnakan dari waktu ke waktu. Silakan berkabar kepada kami bila Anda memiliki ide atau saran untuk memperbaiki layanan ini melalui [Issue Github](https://github.com/gimpscape/lumbung/issues).
