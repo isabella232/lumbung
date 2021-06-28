@@ -7,6 +7,7 @@ creator:
   gitlink: "https://github.com/#"
 tags: []
 thumbnails: [assets/thumbnail.png]
+images: [general//assets/thumbnail.png]
 downloadfile: ""
 license: "CC-BY-SA"
 ---
