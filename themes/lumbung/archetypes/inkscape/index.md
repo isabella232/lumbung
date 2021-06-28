@@ -6,7 +6,7 @@ creator:
   name: "Gimpscape ID"
   gitlink: "https://github.com/youruser"
 tags: []
-images: [inkscape//assets/thumbnail.png]
+images: [inkscape/{{ .Name | urlize }}/assets/thumbnail.png]
 thumbnails: [assets/thumbnail.png]
 downloadfile: ""
 license: "CC-BY-SA"
