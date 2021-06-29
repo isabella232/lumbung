@@ -1,8 +1,8 @@
 {{ define "main" }}
-    <div class="container d-none d-lg-block pt-3">
+    <div class="container pt-3">
         {{- partial "breadcrumb.html" . -}}
     </div>
-    <div class="container d-none d-lg-block thumbnail-detail">
+    <div class="container thumbnail-detail">
         <div class="row">
             <div class="col-sm-3"></div>
             <div class="col-sm-6">
@@ -29,27 +29,27 @@
         </div>
     </div>
     <div class="detail-post">
-        <div class="container d-none d-lg-block">
+        <div class="container">
             <div class="row">
-                <div class="col-md-9" style="padding-right: 200px;">
+                <div class="col-12 col-md-9">
                     <h4 style="color: #0b5cd8; padding-bottom: 14px;"><b>{{ .Title }}</b></h4>
                     <p style="color: rgb(66,71,76);font-family: 'Source Sans Pro', sans-serif;font-size: 12px;">
                     {{ .Content }}
                     </p>
                 </div>
-                <div class="col-md-3">
-                    <div class="row" style="padding-bottom: 10px;">
-                        <a href="{{ .Params.Downloadfile }}" class="btn btn-primary btn-block btn-sm text-center d-block" type="button" style="height: 35px; width: 70%; background-color: #0b5cd8;">Unduh</a>
+                <div class="col-12 col-md-3">
+                    <div class="row mx-1 mx-md-0" style="padding-bottom: 10px;">
+                        <a href="{{ .Params.Downloadfile }}" class="btn btn-primary btn-block btn-sm text-center d-block mx-auto mx-md-0" type="button" style="height: 35px; width: 100%; background-color: #0b5cd8;">Unduh</a>
                     </div>
                     <div class="row" style="height: 35px;">
-                        <div class="col-sm-2" style="padding-top: 4px;padding-left: 10px;"><i><img src="/img/img-user.svg" alt="user"></i></div>
-                        <div class="col-sm-10" style="padding-top: 4px;">
+                        <div class="col-sm-2" style="padding-top: 4px;width: auto;"><i><img src="/img/img-user.svg" alt="user"></i></div>
+                        <div class="col-sm-10" style="padding-top: 4px;width: auto;">
                             <p class="py-2" style="font-family: 'Source Sans Pro', sans-serif;line-height: 12px;font-size: 14px;"><a href="{{ .Params.Creator.Gitlink }}">{{ .Params.Creator.Name }}</a></p>
                         </div>
                     </div>
                     <div class="row" style="height: 35px;">
-                        <div class="col-sm-2" style="padding-top: 4px;padding-left: 10px;"><i><img src="/img/img-calendar.svg" alt="calendar"></i></div>
-                        <div class="col-sm-10 align-self-md-baseline" style="padding-top: 4px;">
+                        <div class="col-sm-2" style="padding-top: 4px;width: auto;"><i><img src="/img/img-calendar.svg" alt="calendar"></i></div>
+                        <div class="col-sm-10 align-self-md-baseline" style="padding-top: 4px;width: auto;">
                             <p class="py-2" style="font-family: 'Source Sans Pro', sans-serif;line-height: 12px;font-size: 14px;">{{ .Date.Day }} {{ index $.Site.Data.bulan (printf "%d" .Date.Month) | humanize }} {{ .Date.Year }}</p>
                         </div>
                     </div>
@@ -60,14 +60,14 @@
                         </div>
                     </div> -->
                     <div class="row" style="height: 35px;">
-                        <div class="col-sm-2" style="padding-top: 4px;padding-left: 10px;"><i><img src="/img/img-license.svg" alt="lisensi"></i></div>
-                        <div class="col-sm-10 align-self-md-baseline" style="padding-top: 4px;">
+                        <div class="col-sm-2" style="padding-top: 4px;width: auto;"><i><img src="/img/img-license.svg" alt="lisensi"></i></div>
+                        <div class="col-sm-10 align-self-md-baseline" style="padding-top: 4px;width: auto;">
                             <p class="py-2" style="font-family: 'Source Sans Pro', sans-serif;height: 44px;line-height: 12px;font-size: 14px;">{{ .Params.License }}</p>
                         </div>
                     </div>
                     <div class="row" style="height: 35px;">
-                        <div class="col-sm-2" style="padding-top: 4px;padding-left: 10px;"><i><img src="/img/img-tags.svg" alt="tagar"></i></div>
-                        <div class="col-sm-10 align-self-md-baseline" style="padding-top: 4px;">
+                        <div class="col-sm-2" style="padding-top: 4px;width: auto;"><i><img src="/img/img-tags.svg" alt="tagar"></i></div>
+                        <div class="col-sm-10 align-self-md-baseline" style="padding-top: 4px;width: auto;">
                             {{ range .Params.Tags }}
                             <a class="badge badge-success" href="{{ "tags" | absURL }}/{{ . | urlize }}">{{.}}</a>
                             {{ end }}
