@@ -1,18 +1,18 @@
 {{ define "main" }}
-<div class="container d-none d-lg-block">
+<div class="container">
     <div class="row">
         <div class="col-md-8">
-            <div class="btn-group" role="group" id="btn-category">
-                <a href="{{ .Site.BaseURL }}" class="btn btn-primary btn-filter" style="width: 100px;">Semua</a>
-                <a href="{{ .Site.BaseURL }}inkscape" class="btn btn-primary btn-filter {{ if eq .Type "inkscape" }}active{{ end }}" style="width: 100px;">Inkscape</a>
-                <a href="{{ .Site.BaseURL }}libreoffice" class="btn btn-primary btn-filter {{ if eq .Type "libreoffice" }}active{{ end }}" style="width: 100px;">LibreOffice</a>
-                <a href="{{ .Site.BaseURL }}general" class="btn btn-primary btn-filter {{ if eq .Type "general" }}active{{ end }}" style="width: 100px;">General</a>
-                <a href="{{ .Site.BaseURL }}lain-lain" class="btn btn-primary btn-filter {{ if eq .Type "lain-lain" }}active{{ end }}" style="width: 100px;">Lain-Lain</a>
+            <div class="row btn-group mt-3" role="group" id="btn-category">
+                <a href="{{ .Site.BaseURL }}" class="btn btn-primary btn-filter my-1" style="width: 100px;">Semua</a>
+                <a href="{{ .Site.BaseURL }}inkscape" class="my-1 btn btn-primary btn-filter {{ if eq .Type "inkscape" }}active{{ end }}" style="width: 100px;">Inkscape</a>
+                <a href="{{ .Site.BaseURL }}libreoffice" class="my-1 btn btn-primary btn-filter {{ if eq .Type "libreoffice" }}active{{ end }}" style="width: 100px;">LibreOffice</a>
+                <a href="{{ .Site.BaseURL }}general" class=" my-1 btn btn-primary btn-filter {{ if eq .Type "general" }}active{{ end }}" style="width: 100px;">General</a>
+                <a href="{{ .Site.BaseURL }}lain-lain" class="my-1 btn btn-primary btn-filter {{ if eq .Type "lain-lain" }}active{{ end }}" style="width: 100px;">Lain-Lain</a>
             </div>
         </div>
         <div class="col-md-3 ml-auto">
             <form action="{{ "search" | absURL }}">
-            <div class="input-group">
+            <div class="input-group mt-3">
                 <input type="text" class="form-control border border-right-0" name="s" id="search-query" placeholder="Cari...">
                 <div class="input-group-append">
                     <span class="input-group-text border border-left-0" style="background:transparent"><img src="{{"img/search.svg"|absURL}}" width="12rem" alt="search"></span>
@@ -23,7 +23,7 @@
     </div>
 </div>
 
-<div class="templates d-none d-lg-block mb-5 py-5">
+<div class="templates mb-5 py-5">
     <div class="container">
         {{ range .Paginator.Pages }}
             {{- partial "content-list.html" . -}}
