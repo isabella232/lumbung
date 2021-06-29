@@ -42,13 +42,13 @@
                         <a href="{{ .Params.Downloadfile }}" class="btn btn-primary btn-block btn-sm text-center d-block" type="button" style="height: 35px; width: 70%; background-color: #0b5cd8;">Unduh</a>
                     </div>
                     <div class="row" style="height: 35px;">
-                        <div class="col-sm-2" style="padding-top: 4px;padding-left: 10px;"><i><img src="/img/user.svg" alt="user"></i></div>
+                        <div class="col-sm-2" style="padding-top: 4px;padding-left: 10px;"><i><img src="/img/img-user.svg" alt="user"></i></div>
                         <div class="col-sm-10" style="padding-top: 4px;">
                             <p class="py-2" style="font-family: 'Source Sans Pro', sans-serif;line-height: 12px;font-size: 14px;"><a href="{{ .Params.Creator.Gitlink }}">{{ .Params.Creator.Name }}</a></p>
                         </div>
                     </div>
                     <div class="row" style="height: 35px;">
-                        <div class="col-sm-2" style="padding-top: 4px;padding-left: 10px;"><i><img src="/img/calendar.svg" alt="calendar"></i></div>
+                        <div class="col-sm-2" style="padding-top: 4px;padding-left: 10px;"><i><img src="/img/img-calendar.svg" alt="calendar"></i></div>
                         <div class="col-sm-10 align-self-md-baseline" style="padding-top: 4px;">
                             <p class="py-2" style="font-family: 'Source Sans Pro', sans-serif;line-height: 12px;font-size: 14px;">{{ .Date.Day }} {{ index $.Site.Data.bulan (printf "%d" .Date.Month) | humanize }} {{ .Date.Year }}</p>
                         </div>
@@ -60,13 +60,13 @@
                         </div>
                     </div> -->
                     <div class="row" style="height: 35px;">
-                        <div class="col-sm-2" style="padding-top: 4px;padding-left: 10px;"><i><img src="/img/license.svg" alt="lisensi"></i></div>
+                        <div class="col-sm-2" style="padding-top: 4px;padding-left: 10px;"><i><img src="/img/img-license.svg" alt="lisensi"></i></div>
                         <div class="col-sm-10 align-self-md-baseline" style="padding-top: 4px;">
                             <p class="py-2" style="font-family: 'Source Sans Pro', sans-serif;height: 44px;line-height: 12px;font-size: 14px;">{{ .Params.License }}</p>
                         </div>
                     </div>
                     <div class="row" style="height: 35px;">
-                        <div class="col-sm-2" style="padding-top: 4px;padding-left: 10px;"><i><img src="/img/tags.svg" alt="tagar"></i></div>
+                        <div class="col-sm-2" style="padding-top: 4px;padding-left: 10px;"><i><img src="/img/img-tags.svg" alt="tagar"></i></div>
                         <div class="col-sm-10 align-self-md-baseline" style="padding-top: 4px;">
                             {{ range .Params.Tags }}
                             <a class="badge badge-success" href="{{ "tags" | absURL }}/{{ . | urlize }}">{{.}}</a>
